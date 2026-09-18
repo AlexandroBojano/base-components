@@ -1,10 +1,11 @@
 import { Navigate } from 'react-router-dom'
 
-const  ProtectedRoute =({ children }) => {
+const ProtectedRoute = ({ children }) => {
   const token = localStorage.getItem('token')
 
-  if (token) {
-    return <Navigate to="/dashboard" replace />
+  // Se NÃO TEM token, barra e manda pro login
+  if (!token) {
+    return <Navigate to="/login" replace />
   }
 
   return children
