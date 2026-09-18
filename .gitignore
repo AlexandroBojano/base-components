@@ -1,0 +1,12 @@
+# comentário
+
+arquivo.txt          # ignora arquivo específico
+*.log                # ignora todos .log
+pasta/                # ignora pasta inteira (a barra no fim indica diretório)
+pasta/*.txt          # ignora .txt só dentro dessa pasta
+**/temp               # ignora "temp" em qualquer nível
+!importante.log       # exceção — NÃO ignora esse, mesmo com regra acima
+/config.json          # barra no INÍCIO = só na raiz do repo, não em subpastas
+node_modules/
+.env
+dist/
