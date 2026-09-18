@@ -1,0 +1,6 @@
+express
+cors
+bcrypt
+jsonwebtoken
+sqlite3
+dotenv
